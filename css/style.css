@@ -17,12 +17,12 @@ body{
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: "Arial", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
   line-height: 150%;
-  background-color: #fff;
+  background-color: #333;
   color: #222;
 }
 
@@ -30,9 +30,9 @@ body{
 /* CONTAINER */
 .container{
   width: 100%;
-  max-width: 1200px;
-  padding-left: 50px;
-  padding-right: 50px;
+  max-width: 490px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -40,5 +40,108 @@ body{
 
 /* MAIN CONTENT */
 .main-content{
+  padding-top: 100px;
+  padding-bottom: 100px;
   flex-grow: 1;
+}
+
+.account-settings {
+  margin: 0;
+  padding: 40px;
+  padding-bottom: 30px;
+  background-color: #ece752;
+  overflow-x: visible;
+}
+
+.account-settings-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+.account-settings-heading {
+  font-weight: 700;
+  margin: 0;
+}
+
+.account-settings-close-link {
+  display: flex;
+}
+.account-settings-form-body {
+  position: relative;
+  background-color: #fff;
+  width: 450px;
+  padding: 40px 30px 40px;
+  margin-bottom: 28px;
+  box-shadow: -13px 18px 24px -3px rgba(18, 29, 37, 0.34);
+
+}
+.hero-img{
+  position: absolute;
+  left: 30px;
+  top: 0;
+  transform: translateY(-50%) ;
+  border-radius: 50%;
+}
+.account-settings-form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.account-settings-form-group:not(:last-child){
+  margin-bottom: 14px;
+}
+.last-first-name-inner{
+  display: flex;
+  width: 100%;
+}
+.last-first-name-inner:not(:last-child){
+  margin-bottom: 14px;
+}
+
+.last-first-name-inner .account-settings-form-group{
+  margin-bottom: 0;
+}
+
+.first_name{
+  width: 50%;
+}
+.last_name{
+  width: 50%;
+}
+
+.account-settings-form-label {
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #777;
+  margin-bottom: 4px;
+}
+.account-settings-form-input {
+  display: block;
+  font-size: 14px;
+  border: none;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  line-height: normal;
+  border-bottom: 1px solid #777;
+  width: 100%;
+}
+.account-settings-form-textarea{
+  min-height: 80px;
+}
+.account-settings-footer {
+  display: flex;
+  justify-content: end;
+}
+.site-footer-button {
+  background-color: transparent;
+  border: none;
+  text-shadow: -10px 8px 10px rgba(6,3,2,0.6);
+}
+.cancel {
+  margin-right: 24px;
+  text-shadow: 2px #333;
 }

@@ -4,15 +4,100 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project</title>
+  <title>Account settings</title>
+
+  <!-- FONTS  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <div class="main-content">
+    <div class="container">
+      <div class="account-settings">
+        <form class="account-settings-form" action="https://echo.htmlacademy.ru" method="POST">
+          <div class="account-settings-header">
+            <h2 class="account-settings-heading">Account settings</h2>
 
+            <a class="account-settings-close-link" href="#"><img src="img/icon_close.svg" alt="Close" width="24" height="24"></a>
+          </div>
+
+          <div class="account-settings-form-body">
+            <img class="hero-img" src="img/small-house.jpg" alt="hero photo" width="56" height="56" srcset="img/small-house.jpg 1x, img/small-house@2x.jpg 2x">
+            <div class="account-settings-form-group">
+              <label class="account-settings-form-label" for="username-input">username</label>
+              <input class="account-settings-form-input" type="text" name="username" id="username-input"  placeholder="Enter your username" required>
+            </div>
+            <div class="last-first-name-inner">
+              <div class="account-settings-form-group first_name">
+                <label class="account-settings-form-label" for="firstname-input">first name</label>
+                <input class="account-settings-form-input" type="text" name="first_name" id="firstname-input"  placeholder="Enter your first name" required>
+              </div>
+              <div class="account-settings-form-group last_name">
+                <label class="account-settings-form-label" for="lastname-input">last name</label>
+                <input class="account-settings-form-input" type="text" name="last_name" id="lastname-input"  placeholder="Enter your last name" required>
+              </div>
+            </div>
+            <div class="account-settings-form-group">
+              <label class="account-settings-form-label" for="email-input">Email</label>
+              <input class="account-settings-form-input" type="email" name="email" id="email-input"  placeholder="Enter your email" pattern="^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$" required>
+            </div>
+            <div class="account-settings-form-group">
+              <label class="account-settings-form-label" for="bio_textarea">Bio</label>
+              <textarea class="account-settings-form-input account-settings-form-textarea" name="bio" id="bio_textarea" placeholder="Tell us about yourself"></textarea>
+            </div>
+          </div>
+          <div class="account-settings-footer">
+            <button class="site-footer-button cancel" type="button">Cancel</button>
+            <button class="site-footer-button save" type="submit">Save</button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
 
   <script src="js/main.js"> </script>
 </body>
 </html>
+
+
+
+
+
+<!--
+
+<div class="account-settings-info">
+  <dl class="account-settings-info-list">
+    <div class="account-settings-info-item">
+      <dt class="account-setting-info-item-title">username</dt>
+      <dd class="account-settings-info-item-text">Enter your username</dd>
+    </div>
+    <div class="firstname-lastname-box">
+      <div class="account-settings-info-item">
+      <dt class="account-setting-info-item-title">First Name</dt>
+      <dd class="account-settings-info-item-text">Enter your first name</dd>
+      </div>
+      <div class="account-settings-info-item">
+      <dt class="account-setting-info-item-title">last name</dt>
+      <dd class="account-settings-info-item-text">Enter your last name</dd>
+      </div>
+    </div>
+    <div class="account-settings-info-item">
+      <dt class="account-setting-info-item-title">email</dt>
+      <dd class="account-settings-info-item-text">Enter your email</dd>
+    </div>
+      <div class="account-settings-info-item">
+      <dt class="account-setting-info-item-title">bio</dt>
+      <dd class="account-settings-info-item-text">Tell us about yourself</dd>
+    </div>
+  </dl>
+</div>
+
+<div class="site-footer">
+
+</div> -->
